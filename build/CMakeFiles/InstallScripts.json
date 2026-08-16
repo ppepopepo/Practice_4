@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/\u0443\u043d\u0438\u043a/\u043c\u043e\u0435/\u043f\u0440\u0430\u043a\u0442\u0438\u043a\u0430 \u043b\u0435\u0442\u043e/26/tasks/Practice_4/build/cmake_install.cmake",
+		"D:/\u0443\u043d\u0438\u043a/\u043c\u043e\u0435/\u043f\u0440\u0430\u043a\u0442\u0438\u043a\u0430 \u043b\u0435\u0442\u043e/26/tasks/Practice_4/build/src/cmake_install.cmake",
+		"D:/\u0443\u043d\u0438\u043a/\u043c\u043e\u0435/\u043f\u0440\u0430\u043a\u0442\u0438\u043a\u0430 \u043b\u0435\u0442\u043e/26/tasks/Practice_4/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

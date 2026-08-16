@@ -1,0 +1,36 @@
+# CMake generated Testfile for 
+# Source directory: D:/уник/мое/практика лето/26/tasks/Practice_4/tests
+# Build directory: D:/уник/мое/практика лето/26/tasks/Practice_4/build/tests
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+if(CTEST_CONFIGURATION_TYPE MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test(test_lib "D:/уник/мое/практика лето/26/tasks/Practice_4/build/tests/Debug/test_lib.exe")
+  set_tests_properties(test_lib PROPERTIES  _BACKTRACE_TRIPLES "D:/уник/мое/практика лето/26/tasks/Practice_4/tests/CMakeLists.txt;3;add_test;D:/уник/мое/практика лето/26/tasks/Practice_4/tests/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test(test_lib "D:/уник/мое/практика лето/26/tasks/Practice_4/build/tests/Release/test_lib.exe")
+  set_tests_properties(test_lib PROPERTIES  _BACKTRACE_TRIPLES "D:/уник/мое/практика лето/26/tasks/Practice_4/tests/CMakeLists.txt;3;add_test;D:/уник/мое/практика лето/26/tasks/Practice_4/tests/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test(test_lib "D:/уник/мое/практика лето/26/tasks/Practice_4/build/tests/MinSizeRel/test_lib.exe")
+  set_tests_properties(test_lib PROPERTIES  _BACKTRACE_TRIPLES "D:/уник/мое/практика лето/26/tasks/Practice_4/tests/CMakeLists.txt;3;add_test;D:/уник/мое/практика лето/26/tasks/Practice_4/tests/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test(test_lib "D:/уник/мое/практика лето/26/tasks/Practice_4/build/tests/RelWithDebInfo/test_lib.exe")
+  set_tests_properties(test_lib PROPERTIES  _BACKTRACE_TRIPLES "D:/уник/мое/практика лето/26/tasks/Practice_4/tests/CMakeLists.txt;3;add_test;D:/уник/мое/практика лето/26/tasks/Practice_4/tests/CMakeLists.txt;0;")
+else()
+  add_test(test_lib NOT_AVAILABLE)
+endif()
+if(CTEST_CONFIGURATION_TYPE MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test(test_app "D:/уник/мое/практика лето/26/tasks/Practice_4/build/tests/Debug/test_app.exe")
+  set_tests_properties(test_app PROPERTIES  _BACKTRACE_TRIPLES "D:/уник/мое/практика лето/26/tasks/Practice_4/tests/CMakeLists.txt;7;add_test;D:/уник/мое/практика лето/26/tasks/Practice_4/tests/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test(test_app "D:/уник/мое/практика лето/26/tasks/Practice_4/build/tests/Release/test_app.exe")
+  set_tests_properties(test_app PROPERTIES  _BACKTRACE_TRIPLES "D:/уник/мое/практика лето/26/tasks/Practice_4/tests/CMakeLists.txt;7;add_test;D:/уник/мое/практика лето/26/tasks/Practice_4/tests/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test(test_app "D:/уник/мое/практика лето/26/tasks/Practice_4/build/tests/MinSizeRel/test_app.exe")
+  set_tests_properties(test_app PROPERTIES  _BACKTRACE_TRIPLES "D:/уник/мое/практика лето/26/tasks/Practice_4/tests/CMakeLists.txt;7;add_test;D:/уник/мое/практика лето/26/tasks/Practice_4/tests/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test(test_app "D:/уник/мое/практика лето/26/tasks/Practice_4/build/tests/RelWithDebInfo/test_app.exe")
+  set_tests_properties(test_app PROPERTIES  _BACKTRACE_TRIPLES "D:/уник/мое/практика лето/26/tasks/Practice_4/tests/CMakeLists.txt;7;add_test;D:/уник/мое/практика лето/26/tasks/Practice_4/tests/CMakeLists.txt;0;")
+else()
+  add_test(test_app NOT_AVAILABLE)
+endif()

@@ -1,0 +1,10 @@
+^D:\УНИК\МОЕ\ПРАКТИКА ЛЕТО\26\TASKS\PRACTICE_4\BUILD\CMAKEFILES\F38E467BADBBBA2C794A181E92D1F46A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/уник/мое/практика лето/26/tasks/Practice_4" "-BD:/уник/мое/практика лето/26/tasks/Practice_4/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/уник/мое/практика лето/26/tasks/Practice_4/build/bmp_image_processor.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

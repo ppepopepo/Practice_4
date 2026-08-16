@@ -1,0 +1,13 @@
+D:/уник/мое/практика лето/26/tasks/Practice_4/build/CMakeFiles/Experimental.dir
+D:/уник/мое/практика лето/26/tasks/Practice_4/build/CMakeFiles/Nightly.dir
+D:/уник/мое/практика лето/26/tasks/Practice_4/build/CMakeFiles/Continuous.dir
+D:/уник/мое/практика лето/26/tasks/Practice_4/build/CMakeFiles/NightlyMemoryCheck.dir
+D:/уник/мое/практика лето/26/tasks/Practice_4/build/CMakeFiles/RUN_TESTS.dir
+D:/уник/мое/практика лето/26/tasks/Practice_4/build/CMakeFiles/ALL_BUILD.dir
+D:/уник/мое/практика лето/26/tasks/Practice_4/build/CMakeFiles/ZERO_CHECK.dir
+D:/уник/мое/практика лето/26/tasks/Practice_4/build/src/CMakeFiles/image_processor.dir
+D:/уник/мое/практика лето/26/tasks/Practice_4/build/src/CMakeFiles/bmp_processor.dir
+D:/уник/мое/практика лето/26/tasks/Practice_4/build/src/CMakeFiles/RUN_TESTS.dir
+D:/уник/мое/практика лето/26/tasks/Practice_4/build/tests/CMakeFiles/test_lib.dir
+D:/уник/мое/практика лето/26/tasks/Practice_4/build/tests/CMakeFiles/test_app.dir
+D:/уник/мое/практика лето/26/tasks/Practice_4/build/tests/CMakeFiles/RUN_TESTS.dir
