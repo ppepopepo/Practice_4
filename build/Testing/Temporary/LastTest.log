@@ -1,18 +1,18 @@
-Start testing: Aug 17 04:00 RTZ 4 (зима)
+Start testing: Aug 17 04:16 RTZ 4 (зима)
 ----------------------------------------------------------
 1/2 Testing: test_lib
 1/2 Test: test_lib
 Command: "D:/СѓРЅРёРє/РјРѕРµ/РїСЂР°РєС‚РёРєР° Р»РµС‚Рѕ/26/tasks/Practice_4/build/tests/Release/test_lib.exe"
 Directory: D:/СѓРЅРёРє/РјРѕРµ/РїСЂР°РєС‚РёРєР° Р»РµС‚Рѕ/26/tasks/Practice_4/build/tests
-"test_lib" start time: Aug 17 04:00 RTZ 4 (зима)
+"test_lib" start time: Aug 17 04:16 RTZ 4 (зима)
 Output:
 ----------------------------------------------------------
 Все тесты пройдены!
 <end of output>
-Test time =   0.04 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"test_lib" end time: Aug 17 04:00 RTZ 4 (зима)
+"test_lib" end time: Aug 17 04:16 RTZ 4 (зима)
 "test_lib" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -20,16 +20,16 @@ Test Passed.
 2/2 Test: test_app
 Command: "D:/СѓРЅРёРє/РјРѕРµ/РїСЂР°РєС‚РёРєР° Р»РµС‚Рѕ/26/tasks/Practice_4/build/tests/Release/test_app.exe"
 Directory: D:/СѓРЅРёРє/РјРѕРµ/РїСЂР°РєС‚РёРєР° Р»РµС‚Рѕ/26/tasks/Practice_4/build/tests
-"test_app" start time: Aug 17 04:00 RTZ 4 (зима)
+"test_app" start time: Aug 17 04:16 RTZ 4 (зима)
 Output:
 ----------------------------------------------------------
 Тесты приложения пройдены!
 <end of output>
-Test time =   0.04 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"test_app" end time: Aug 17 04:00 RTZ 4 (зима)
+"test_app" end time: Aug 17 04:16 RTZ 4 (зима)
 "test_app" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Aug 17 04:00 RTZ 4 (зима)
+End testing: Aug 17 04:16 RTZ 4 (зима)
