@@ -10,23 +10,13 @@ image_transform.c - реализация функций преобразования изображений.
 #include <math.h>
 #include <string.h>
 
-typedef struct {
-    float percentage;
-} BrightnessData;
+#ifndef max
+#define max(a,b) ((a) > (b) ? (a) : (b))
+#endif
 
-typedef struct {
-    int red_boost;
-    int blue_reduce;
-} SepiaData;
-
-typedef struct {
-    Pixel color1;
-    Pixel color2;
-} DuotoneData;
-
-typedef struct {
-    int step;
-} ComicData;
+#ifndef min
+#define min(a,b) ((a) < (b) ? (a) : (b))
+#endif
 
 int image_apply_transform(BMPImage* image, PixelTransformFunc transform, void* user_data) {
     if (!image || !transform) return 0;
@@ -76,9 +66,16 @@ Pixel transform_comic(Pixel pixel, void* user_data) {
     ComicData* data = (ComicData*)user_data;
     int step = data->step;
 
+    if (step <= 0) step = 1;
+
     pixel.red = (pixel.red / step) * step;
+    if (pixel.red > 255) pixel.red = 255;
+
     pixel.green = (pixel.green / step) * step;
+    if (pixel.green > 255) pixel.green = 255;
+
     pixel.blue = (pixel.blue / step) * step;
+    if (pixel.blue > 255) pixel.blue = 255;
 
     return pixel;
 }
@@ -101,6 +98,11 @@ int image_transpose(BMPImage* image) {
 
     free(image->pixels);
     image->pixels = new_pixels;
+
+    // Обновляем заголовок
+    image->infoHeader.biWidth = image->width;
+    image->infoHeader.biHeight = image->height;
+
     return 1;
 }
 
@@ -121,7 +123,7 @@ int image_pixelate(BMPImage* image, int block_size) {
 
     for (int y = 0; y < image->height; y += block_size) {
         for (int x = 0; x < image->width; x += block_size) {
-            int sum_r = 0, sum_g = 0, sum_b = 0;
+            long long sum_r = 0, sum_g = 0, sum_b = 0;
             int count = 0;
 
             for (int dy = 0; dy < block_size && y + dy < image->height; dy++) {
@@ -134,14 +136,16 @@ int image_pixelate(BMPImage* image, int block_size) {
                 }
             }
 
-            Pixel avg;
-            avg.red = sum_r / count;
-            avg.green = sum_g / count;
-            avg.blue = sum_b / count;
+            if (count > 0) {
+                Pixel avg;
+                avg.red = (uint8_t)(sum_r / count);
+                avg.green = (uint8_t)(sum_g / count);
+                avg.blue = (uint8_t)(sum_b / count);
 
-            for (int dy = 0; dy < block_size && y + dy < image->height; dy++) {
-                for (int dx = 0; dx < block_size && x + dx < image->width; dx++) {
-                    image->pixels[(y + dy) * image->width + (x + dx)] = avg;
+                for (int dy = 0; dy < block_size && y + dy < image->height; dy++) {
+                    for (int dx = 0; dx < block_size && x + dx < image->width; dx++) {
+                        image->pixels[(y + dy) * image->width + (x + dx)] = avg;
+                    }
                 }
             }
         }
