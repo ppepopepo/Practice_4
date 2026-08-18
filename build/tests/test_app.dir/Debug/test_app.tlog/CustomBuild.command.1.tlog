@@ -1,0 +1,10 @@
+^D:\УНИК\МОЕ\ПРАКТИКА ЛЕТО\26\TASKS\PRACTICE_4\TESTS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/уник/мое/практика лето/26/tasks/Practice_4" "-BD:/уник/мое/практика лето/26/tasks/Practice_4/build" --check-stamp-file "D:/уник/мое/практика лето/26/tasks/Practice_4/build/tests/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
